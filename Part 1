@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barack Obama: Legacy of the 44th President</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(0,82,156,0.9) 0%, rgba(0,120,212,0.8) 50%, rgba(0,82,156,0.7) 100%);
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -38px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #0052a4;
+            border: 4px solid #0078d4;
+        }
+        .quote-card {
+            background: linear-gradient(145deg, #ffffff, #f0f0f0);
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+        }
+        .impact-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #0078d4;
+            transition: width .3s;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-4">
+                    <div class="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center">
+                        <i class="fas fa-landmark text-white"></i>
+                    </div>
+                    <span class="font-bold text-xl text-blue-800">Obama Legacy</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-blue-700">Home</a>
+                    <a href="#background" class="nav-link text-gray-700 hover:text-blue-700">Background</a>
+                    <a href="#presidency" class="nav-link text-gray-700 hover:text-blue-700">Presidency</a>
+                    <a href="#impact" class="nav-link text-gray-700 hover:text-blue-700">Impact</a>
+                    <a href="#gallery" class="nav-link text-gray-700 hover:text-blue-700">Gallery</a>
+                </div>
+                <button class="md:hidden text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white py-20 md:py-32">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Barack Obama: The 44th President</h1>
+                <p class="text-xl mb-8 leading-relaxed">America's first African American president who transformed U.S. politics and redefined the nation's role in the 21st century.</p>
+                <div class="bg-white bg-opacity-20 p-6 rounded-lg mb-8">
+                    <p class="italic text-lg">"Change will not come if we wait for some other person or some other time. We are the ones we've been waiting for. We are the change that we seek."</p>
+                    <p class="font-semibold mt-2">— Barack Obama</p>
+                </div>
+                <a href="#background" class="bg-white text-blue-800 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300 inline-block">Explore His Journey</a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/President_Barack_Obama.jpg" alt="Barack Obama official portrait" class="rounded-lg shadow-2xl max-w-full h-auto border-4 border-white">
+            </div>
+        </div>
+    </section>
+
+    <!-- Thesis Statement -->
+    <section class="bg-gray-100 py-16">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-blue-800 mb-6">Thesis Statement</h2>
+            <p class="text-xl leading-relaxed text-gray-700">Barack Obama's presidency marked a pivotal moment in American history, breaking racial barriers while implementing transformative policies that reshaped healthcare, environmental protection, and foreign relations, leaving a lasting legacy that continues to influence the nation's political and social landscape.</p>
+        </div>
+    </section>
+
+    <!-- Background Section -->
+    <section id="background" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-blue-800 mb-16">Early Life & Political Rise</h2>
+            
+            <div class="flex flex-col md:flex-row mb-16">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Formative Years</h3>
+                    <p class="text-gray-700 mb-4">Barack Hussein Obama II was born on August 4, 1961, in Honolulu, Hawaii, to a Kenyan father and American mother. His multicultural upbringing—spending part of his childhood in Indonesia and being raised by his white grandparents in Hawaii—gave him a unique perspective on American identity.</p>
+                    <p class="text-gray-700 mb-6">After graduating from Columbia University and Harvard Law School (where he became the first Black president of the Harvard Law Review), Obama worked as a community organizer in Chicago, laying the foundation for his future political career.</p>
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <h4 class="font-semibold text-blue-800 mb-2">Key Influences:</h4>
+                        <ul class="list-disc pl-5 text-gray-700">
+                            <li class="mb-1">Community organizing in Chicago's South Side</li>
+                            <li class="mb-1">Teaching constitutional law at University of Chicago</li>
+                            <li class="mb-1">Illinois State Senate experience (1997-2004)</li>
+                            <li class="mb-1">Landmark 2004 DNC Convention speech</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-gray-100 p-4 rounded-lg">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Barack_Obama_1993.jpg" alt="Young Barack Obama" class="rounded-lg w-full h-auto">
+                        <p class="text-sm text-gray-600 mt-2">Obama as a young community organizer in Chicago (1993)</p>
+                    </div>
+                    <div class="mt-6 bg-gray-100 p-4 rounded-lg">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Barack_Obama_family_portrait_2011.jpg" alt="Obama family" class="rounded-lg w-full h-auto">
+                        <p class="text-sm text-gray-600 mt-2">The Obama family: Michelle, Malia, Sasha, and Barack</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="text-2xl font-semibold mb-6 text-center text-gray-800">Path to the Presidency</h3>
+            <div class="relative pl-12 border-l-2 border-blue-200">
+                <!-- Timeline items -->
+                <div class="relative timeline-item mb-12">
+                    <h4 class="text-xl font-semibold text-blue-800 mb-2">2004 U.S. Senate Election</h4>
+                    <p class="text-gray-700 mb-2">Obama's landslide victory in Illinois (70% of vote) brought him national attention after his inspiring keynote address at the Democratic National Convention.</p>
+                    <div class="text-sm text-gray-500 italic">"There's not a liberal America and a conservative America—there's the United States of America."</div>
+                </div>
+                
+                <div class="relative timeline-item mb-12">
+                    <h4 class="text-xl font-semibold text-blue-800 mb-2">2008 Presidential Campaign</h4>
+                    <p class="text-gray-700 mb-2">Obama's message of "Hope and Change" resonated with Americans weary of war and economic crisis. His innovative grassroots campaign mobilized record numbers of voters.</p>
+                    <div class="flex flex-wrap gap-2 mt-3">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">"Yes We Can"</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Record fundraising</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Social media strategy</span>
+                    </div>
+                </div>
+                
+                <div class="relative timeline-item">
+                    <h4 class="text-xl font-semibold text-blue-800 mb-2">November 4, 2008</h4>
+                    <p class="text-gray-700 mb-2">Barack Obama made history by defeating John McCain with 365 electoral votes, becoming the first African American president of the United States.</p>
+                    <div class="bg-blue-50 p-4 rounded-lg mt-3">
+                        <p class="font-medium text-blue-800">Historic voter turnout:</p>
+                        <div class="flex justify-between mt-2">
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-blue-700">69.5M</div>
+                                <div class="text-xs text-gray-600">Popular votes</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-blue-700">52.9%</div>
+                                <div class="text-xs text-gray-600">Percentage</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-blue-700">365</div>
+                                <div class="text-xs text-gray-600">Electoral votes</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Presidency Section -->
+    <section id="presidency" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-blue-800 mb-16">Presidential Achievements</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <!-- Domestic Policy Card -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-blue-700 flex items-center justify-center">
+                        <i class="fas fa-home text-white text-6xl"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-800">Domestic Policy</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span><strong>Affordable Care Act (2010):</strong> Expanded healthcare coverage to 20 million Americans</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span><strong>Economic Recovery:</strong> Ended Great Recession with $787B stimulus package</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span><strong>Marriage Equality:</strong> Supported Supreme Court decision legalizing same-sex marriage</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Foreign Policy Card -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-blue-700 flex items-center justify-center">
+                        <i class="fas fa-globe-americas text-white text-6xl"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-800">Foreign Policy</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span><strong>Iran Nuclear Deal:</strong> 2015 agreement limiting Iran's nuclear program</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span><strong>Osama bin Laden:</strong> Ordered raid that killed al-Qaeda leader (2011)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span><strong>Paris Climate Accord:</strong> U.S. leadership on climate change agreement</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="text-2xl font-semibold mb-8 text-center text-gray-800">Key Moments in the Obama Presidency</h3>
+            
+            <div class="bg-white rounded-xl shadow-md overflow-hidden mb-16">
+                <div class="md:flex">
+                    <div class="md:w-1/3">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Obama_signing_health_care_bill.jpg" alt="Obama signing ACA" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8 md:w-2/3">
+                        <div class="uppercase tracking-wide text-sm text-blue-600 font-semibold">March 23, 2010</div>
+                        <h3 class="text-2xl font-semibold mt-2 text-gray-800">Signing the Affordable Care Act</h3>
+                        <p class="mt-4 text-gray-700">The ACA (Obamacare) represented the most significant regulatory overhaul of the U.S. healthcare system since Medicare. Despite political opposition, it reduced the uninsured rate from 16% to 8.9% by 2016.</p>
+                        <div class="mt-6">
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Learn more about the ACA <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-gavel text-3xl"></i>
+                    </div>
+                    <h4 class="font-semibold text-lg mb-2">Supreme Court Appointments</h4>
+                    <p class="text-gray-700">Appointed Sonia Sotomayor (first Latina justice) and Elena Kagan, shifting the Court's balance.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-leaf text-3xl"></i>
+                    </div>
+                    <h4 class="font-semibold text-lg mb-2">Environmental Protection</h4>
+                    <p class="text-gray-700">Implemented Clean Power Plan and committed to Paris Agreement to combat climate change.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-university text-3xl"></i>
+                    </div>
+                    <h4 class="font-semibold text-lg mb-2">Economic Recovery</h4>
+                    <p class="text-gray-700">Oversaw 75 straight months of job growth and reduced unemployment from 10% to 4.7%.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-blue-800 mb-16">Lasting Impact & Legacy</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="impact-card bg-gray-50 p-8 rounded-xl shadow-md border-t-4 border-blue-600">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">Political Impact</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-star text-yellow-500 mt-1 mr-2"></i>
+                            <span>Inspired new generation of diverse political candidates</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-star text-yellow-500 mt-1 mr-2"></i>
+                            <span>Changed Democratic Party's approach to grassroots organizing</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-star text-yellow-500 mt-1 mr-2"></i>
+                            <span>Polarizing effect contributed to modern political divisions</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="impact-card bg-gray-50 p-8 rounded-xl shadow-md border-t-4 border-green-600">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">Social Impact</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-heart text-red-500 mt-1 mr-2"></i>
+                            <span>Symbolic importance as first Black president</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-heart text-red-500 mt-1 mr-2"></i>
+                            <span>Advanced LGBTQ+ rights including marriage equality</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-heart text-red-500 mt-1 mr-2"></i>
+                            <span>Michelle Obama's "Let's Move!" campaign against childhood obesity</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="impact-card bg-gray-50 p-8 rounded-xl shadow-md border-t-4 border-purple-600">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">Global Influence</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-globe text-blue-500 mt-1 mr-2"></i>
+                            <span>Restored America's international reputation post-Bush era</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-globe text-blue-500 mt-1 mr-2"></i>
+                            <span>Nobel Peace Prize (2009) for "extraordinary efforts" in diplomacy</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-globe text-blue-500 mt-1 mr-2"></i>
+                            <span>Pivot to Asia strategy rebalanced U.S. foreign policy priorities</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h3 class="text-2xl font-semibold mb-8 text-center text-gray-800">By the Numbers: Obama's Legacy</h3>
+            
+            <div class="grid md:grid-cols-4 gap-6 text-center mb-16">
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <div class="text-4xl font-bold text-blue-800 mb-2">20M+</div>
+                    <div class="text-gray-700">Americans gained health insurance</div>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <div class="text-4xl font-bold text-blue-800 mb-2">11.3M</div>
+                    <div class="text-gray-700">Jobs created during presidency</div>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <div class="text-4xl font-bold text-blue-800 mb-2">$2.1T</div>
+                    <div class="text-gray-700">Deficit reduction (2009-2016)</div>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <div class="text-4xl font-bold text-blue-800 mb-2">90%</div>
+                    <div class="text-gray-700">Approval rating among Black Americans (2016)</div>
+                </div>
+            </div>
+            
+            <div class="bg-gray-100 p-8 rounded-xl">
+                <h3 class="text-2xl font-semibold mb-4 text-center text-gray-800">Historical Perspective</h3>
+                <p class="text-gray-700 mb-6 text-center max-w-3xl mx-auto">Historians rank Obama among the top 15 U.S. presidents, praising his handling of the financial crisis, healthcare reform, and diplomatic achievements, while noting challenges like congressional obstruction and failure to close Guantanamo Bay.</p>
+                
+                <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+                    <div class="quote-card p-6 rounded-lg max-w-md">
+                        <p class="italic text-gray-700 mb-2">"Obama's presidency proved that the American ideal of equality could extend to the highest office, changing perceptions of what's possible for minorities in America."</p>
+                        <p class="font-semibold text-blue-800">— Doris Kearns Goodwin, Historian</p>
+                    </div>
+                    <div class="quote-card p-6 rounded-lg max-w-md">
+                        <p class="italic text-gray-700 mb-2">"The Affordable Care Act, despite its flaws, established healthcare as a right in America and became the foundation for future reforms."</p>
+                        <p class="font-semibold text-blue-800">— Ezra Klein, Political Analyst</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-blue-800 mb-16">Gallery of Historic Moments</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <div class="group relative overflow-hidden rounded-lg shadow-md">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/President_Barack_Obama.jpg" alt="Obama official portrait" class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <p class="text-white font-semibold text-center px-4">Official Presidential Portrait</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-md">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/President_Barack_Obama%2C_2012_portrait_crop.jpg" alt="Obama in Oval Office" class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <p class="text-white font-semibold text-center px-4">In the Oval Office</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-md">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Obama_signing_health_care_bill.jpg" alt="Obama signing ACA" class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <p class="text-white font-semibold text-center px-4">Signing the Affordable Care Act</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-md">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Barack_Obama_family_portrait_2009.jpg" alt="Obama family 2009" class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <p class="text-white font-semibold text-center px-4">First Family Portrait (2009)</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-md">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Barack_Obama_and_Michelle_Obama_at_2009_inaugural_ball_-_cropped.jpg" alt="Obama at inaugural ball" class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <p class="text-white font-semibold text-center px-4">2009 Inaugural Ball</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-md">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Obama_and_Netanyahu_in_2011.jpg" alt="Obama with Netanyahu" class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <p class="text-white font-semibold text-center px-4">Diplomatic Meeting with Netanyahu</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white p-8 rounded-xl shadow-md">
+                <h3 class="text-2xl font-semibold mb-6 text-center text-gray-800">Explore More</h3>
+                <div class="flex flex-col md:flex-row justify-center gap-6">
+                    <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition duration-300 text-center">
+                        <i class="fas fa-book mr-2"></i> Presidential Library
+                    </a>
+                    <a href="#" class="bg-gray-800 hover:bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold transition duration-300 text-center">
+                        <i class="fas fa-film mr-2"></i> Documentary Films
+                    </a>
+                    <a href="#" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition duration-300 text-center">
+                        <i class="fas fa-microphone mr-2"></i> Podcast Series
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Obama Legacy</h4>
+                    <p class="text-gray-400">Exploring the historic presidency and lasting impact of Barack Obama, the 44th President of the United States.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#background" class="text-gray-400 hover:text-white transition">Background</a></li>
+                        <li><a href="#presidency" class="text-gray-400 hover:text-white transition">Presidency</a></li>
+                        <li><a href="#impact" class="text-gray-400 hover:text-white transition">Impact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">WhiteHouse.gov Archive</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Obama Presidential Library</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Miller Center Profile</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Obama Legacy Project. Educational use only. All images from Wikimedia Commons.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle functionality would go here
+        // This is a placeholder for actual implementation
+        const mobileMenuButton = document.querySelector('.md\\:hidden');
+        mobileMenuButton.addEventListener('click', () => {
+            alert('Mobile menu would open here in a full implementation');
+        });
+    </script>
+</body>
+</html>
